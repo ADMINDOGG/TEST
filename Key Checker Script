@@ -6,7 +6,7 @@ local validKeys = {
 
 if validKeys[getgenv().Key] then
     print("✅ Key ถูกต้อง! กำลังโหลดสคริปต์หลัก...")
-    loadstring(game:HttpGet("https://pastebin.com/raw/YourMainScript"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ADMINDOGG/TEST/refs/heads/main/MainScript"))()
 else
     warn("❌ Key ไม่ถูกต้อง กรุณาไปเอาคีย์จาก Discord หรือเว็บไซต์")
     game:GetService("StarterGui"):SetCore("SendNotification", {
