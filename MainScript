@@ -1,0 +1,7 @@
+-- ตัวอย่างสคริปต์หลัก
+print("🎉 Loaded Main Script!")
+game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "Dog Hub",
+    Text = "Welcome to the hub!",
+    Duration = 5
+})
