@@ -1,0 +1,17 @@
+local validKeys = {
+    ["abc123"] = true,
+    ["def456"] = true,
+    ["953582724067766322"] = true,
+}
+
+if validKeys[getgenv().Key] then
+    print("✅ Key ถูกต้อง! กำลังโหลดสคริปต์หลัก...")
+    loadstring(game:HttpGet("https://pastebin.com/raw/YourMainScript"))()
+else
+    warn("❌ Key ไม่ถูกต้อง กรุณาไปเอาคีย์จาก Discord หรือเว็บไซต์")
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "Invalid Key",
+        Text = "กรุณาใส่คีย์ให้ถูกต้อง",
+        Duration = 5
+    })
+end
